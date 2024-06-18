@@ -1,0 +1,8 @@
+<div>
+    <p>this is a parent component</p>
+    Enter the message for child <input #msg value="" id="msg" name="msg" />
+    <button (click)="sendMsg(msg.value)">Send message</button>
+</div>
+<hr/>
+<app-child-component [msgFromParent]="msgToBeSent"></app-child-component>
+<hr/>
